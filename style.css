@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, p{
+    font-family: "Space Grotesk", sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+.cards{
+    margin: auto;
+    max-width: 720px;
+    width: 100%;
+    position: relative;
+    height: 283px;
+    background-image: url(images/bg-main-mobile.png);
+    background-size: 100% 240px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.back-card{
+    position: absolute;
+    top: 32px;
+    right: 16px;
+    width: 286px;
+    height: 157px;
+    background-image: url(images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.back-card h1{
+    position: absolute;
+    top: 72px;
+    right: 36px;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 11.48px;
+    letter-spacing: 1.29px;
+    color: white;
+}
+.front-card{
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    width: 100%;
+    max-width: 286px;
+    height: 157px;
+    background-image: url(images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 17.6px 20.89px 0 19px;
+}
+.front-card img{
+    max-height: 30px;
+    margin-bottom: 37px;
+}
+#card-number{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22.97px;
+    letter-spacing: 2.2px;
+    color: white;
+    margin-bottom: 17px;
+}
+.name-and-date{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name-and-date h1{
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 11.48px;
+    letter-spacing: 1.29px;
+    color: white;
+}
+
+.cards-inputs-div{
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+    margin-top: 48px;
+    padding: 0 24px;
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input-main-divs h1{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15.31px;
+    letter-spacing: 2px;
+    color: #21092F;
+    margin-bottom: 9px;
+}
+.input-main-divs input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #DFDEE0;
+    border-radius: 10px;
+    min-width: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.97px;
+    text-align: left;
+    padding-left: 16px;
+}
+.input-main-divs input::placeholder{
+    color: #21092F;
+    opacity: 25%;
+}
+.divs1{
+    flex: 1;
+}
+.date-inputs{
+    display: flex;
+    gap: 8px;
+}
+#confirm{
+    width: 100%;
+    height: 53px;
+    background-color: #21092F;
+    border: none;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+#confirm h1{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22.97px;
+    color: white;
+}
+
+.complete{
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+    margin-top: 48px;
+    padding: 0 24px;
+    display: none; /* flex */
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+.complete img{
+    width: 80px;
+}
+#complete-heading{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 35.73px;
+    letter-spacing: 3.42px;
+    color: #21092F;
+    margin-bottom: 16px;
+}
+.complete p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.97px;
+    color: #8F8694;
+}
+.complete button{
+    width: 100%;
+    height: 53px;
+    border: none;
+    border-radius: 10px;
+    background-color: #21092F;
+}
+.complete button h1{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.97px;
+    color: white;
+}
