@@ -177,3 +177,71 @@ body{
     line-height: 22.97px;
     color: white;
 }
+
+@media only screen and (min-width: 1440px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cards{
+        max-width: 705px;
+        min-height: 100vh;
+        margin: 0;
+        background-image: url(images/bg-main-desktop.png);
+        background-size: 483px 100%;
+    }
+    .cards-inputs-div{
+        max-width: 381px;
+        margin: 0;
+        margin-right: 227px;
+    }
+    .back-card{
+        top: calc(50% + 18px);
+        left: 258px;
+        width: 447px;
+        height: 245px;
+    }
+    .back-card h1{
+        top: 112px;
+        right: 57px;
+        font-size: 14px;
+        line-height: 17.86px;
+        letter-spacing: 2px;
+    }
+    .front-card{
+        bottom: calc(50% + 18px);
+        left: 164px;
+        width: 100%;
+        max-width: 447px;
+        height: 245px;
+        padding: 28px 32px 0 32px;
+    }
+    .front-card img{
+        max-height: 47px;
+        margin-bottom: 64px;
+    }
+    #card-number{
+        font-size: 28px;
+        line-height: 35.73px;
+        letter-spacing: 3.42px;
+        margin-bottom: 25.5px;
+    }
+    .name-and-date h1{
+        font-size: 14px;
+        line-height: 17.86px;
+        letter-spacing: 2px;
+    }
+    #confirm:hover{
+        cursor: pointer;
+    }
+    .complete{
+        max-width: 381px;
+        margin: 0;
+        margin-right: 227px;
+        padding: 0;
+    }
+    .complete button:hover{
+        cursor: pointer;
+    }
+}
