@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <script defer src="app.js"></script>
 </head>
 <body>
     <div class="cards">
@@ -27,27 +27,31 @@
     </div>
     <div class="cards-inputs-div">
         <div class="input-main-divs">
-            <h1>CARDHOLDER NAME</h1>
-            <input type="text" placeholder="e.g. Jane Appleseed">
+            <h1 class="input-headers">CARDHOLDER NAME</h1>
+            <input id="name-input" type="text" placeholder="e.g. Jane Appleseed" maxlength="30" onchange="change1()">
+            <h1 class="error-message" id="cardholder-error"></h1>
         </div>
         <div class="input-main-divs">
-            <h1>CARD NUMBER</h1>
-            <input type="text" placeholder="e.g. 1234 5678 9123 0000">
+            <h1 class="input-headers">CARD NUMBER</h1>
+            <input id="card-number-input" type="text" placeholder="e.g. 1234 5678 9123 0000" maxlength="19" onchange="change2()">
+            <h1 class="error-message" id="cardnumber-error"></h1>
         </div>
         <div class="input-main-divs" style="display: flex; gap: 11px;">
             <div class="divs1">
-                <h1>EXP. DATE (MM/YY)</h1>
+                <h1 class="input-headers">EXP. DATE (MM/YY)</h1>
                 <div class="date-inputs">
-                    <input type="number" placeholder="MM">
-                    <input type="number" placeholder="YY">
+                    <input id="date-month-input" type="text" placeholder="MM" maxlength="2" onchange="change3()">
+                    <input id="date-year-input" type="text" placeholder="YY" maxlength="2" onchange="change4()">
                 </div>
+                <h1 class="error-message" id="date-error"></h1>
             </div>
             <div class="divs1">
-                <h1>CVC</h1>
-                <input type="number" placeholder="e.g. 123">
+                <h1 class="input-headers">CVC</h1>
+                <input id="CVC-input" type="text" placeholder="e.g. 123" maxlength="3" onchange="change5()">
+                <h1 class="error-message" id="CVC-error"></h1>
             </div>
         </div>
-        <button id="confirm"><h1>Confirm</h1></button>
+        <button id="confirm" onclick="Confirm()"><h1>Confirm</h1></button>
     </div>
     <div class="complete">
         <img src="images/icon-complete.svg" alt="icon complete">

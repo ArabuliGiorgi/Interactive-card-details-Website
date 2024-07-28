@@ -9,16 +9,13 @@ h1, p{
 body{
     min-height: 100vh;
 }
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
 input:focus{
     border: 1px solid #6348FE !important;
     outline: none;
 }
 .cards{
     margin: auto;
+    margin-bottom: 45px;
     max-width: 720px;
     width: 100%;
     position: relative;
@@ -95,9 +92,9 @@ input:focus{
     padding-bottom: 45px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
 }
-.input-main-divs h1{
+.input-headers{
     font-weight: 500;
     font-size: 12px;
     line-height: 15.31px;
@@ -184,6 +181,13 @@ input:focus{
     font-weight: 500;
     line-height: 22.97px;
     color: white;
+}
+.error-message{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15.31px;
+    color: #FF5050;
+    margin-top: 8px;
 }
 
 @media only screen and (min-width: 1440px){
