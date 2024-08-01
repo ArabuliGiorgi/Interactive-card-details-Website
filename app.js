@@ -171,23 +171,8 @@ function Confirm(){
     }
 }
 
-function change1(){
-    cardholder_input.style.border = "1px solid #DFDEE0";
-    cardholder_error.textContent = "";
-}
-function change2(){
-    cardnumber_input.style.border = "1px solid #DFDEE0";
-    cardnumber_error.textContent = "";
-}
-function change3(){
-    month_input.style.border = "1px solid #DFDEE0";
-    date_error.textContent = "";
-}
-function change4(){
-    year_input.style.border = "1px solid #DFDEE0";
-    date_error.textContent = "";
-}
-function change5(){
-    CVC_input.style.border = "1px solid #DFDEE0";
-    CVC_error.textContent = "";
+
+function change(inp, error){
+    inp.style.border = "1px solid #DFDEE0";
+    error.textContent = "";
 }

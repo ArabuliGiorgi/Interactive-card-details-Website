@@ -28,26 +28,26 @@
     <div class="cards-inputs-div">
         <div class="input-main-divs">
             <h1 class="input-headers">CARDHOLDER NAME</h1>
-            <input id="name-input" type="text" placeholder="e.g. Jane Appleseed" maxlength="30" onchange="change1()">
+            <input id="name-input" type="text" placeholder="e.g. Jane Appleseed" maxlength="30" onchange="change(cardholder_input, cardholder_error)">
             <h1 class="error-message" id="cardholder-error"></h1>
         </div>
         <div class="input-main-divs">
             <h1 class="input-headers">CARD NUMBER</h1>
-            <input id="card-number-input" type="text" placeholder="e.g. 1234 5678 9123 0000" maxlength="19" onchange="change2()">
+            <input id="card-number-input" type="text" placeholder="e.g. 1234 5678 9123 0000" maxlength="19" onchange="change(cardnumber_input, cardnumber_error)">
             <h1 class="error-message" id="cardnumber-error"></h1>
         </div>
         <div class="input-main-divs" style="display: flex; gap: 11px;">
             <div class="divs1">
                 <h1 class="input-headers">EXP. DATE (MM/YY)</h1>
                 <div class="date-inputs">
-                    <input id="date-month-input" type="text" placeholder="MM" maxlength="2" onchange="change3()">
-                    <input id="date-year-input" type="text" placeholder="YY" maxlength="2" onchange="change4()">
+                    <input id="date-month-input" type="text" placeholder="MM" maxlength="2" onchange="change(month_input, date_error)">
+                    <input id="date-year-input" type="text" placeholder="YY" maxlength="2" onchange="change(year_input, date_error)">
                 </div>
                 <h1 class="error-message" id="date-error"></h1>
             </div>
             <div class="divs1">
                 <h1 class="input-headers">CVC</h1>
-                <input id="CVC-input" type="text" placeholder="e.g. 123" maxlength="3" onchange="change5()">
+                <input id="CVC-input" type="text" placeholder="e.g. 123" maxlength="3" onchange="change(CVC_input, CVC_error)">
                 <h1 class="error-message" id="CVC-error"></h1>
             </div>
         </div>
