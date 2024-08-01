@@ -20,29 +20,14 @@ cardholder_input.addEventListener("input", () => {
 });
 
 function cardNumFormat(str){
-    let resultStr = ["", "", "", ""];
-    let i = 0;
-    let index = 0;
-    for(let j = 0; j < str.length; j++){
-        resultStr[i] += str[j];
-        index++;
-        if(index == 4){
-            index = 0;
-            i++;
-        }
+    let temp = str.padEnd(16, '0');
+    let result = "";
+    for(let i = 1; i <= temp.length; i++){
+        result += temp[i - 1];
+        if(i % 4 === 0 && i !== temp.length)
+            result += ' ';
     }
-    while(i < 4){
-        if(index !== 4){
-            resultStr[i] += "0";
-            index++;
-        }
-        
-        if(index == 4){
-            index = 0;
-            i++;
-        }
-    }
-    return resultStr.join(' ');
+    return result;
 }
 cardnumber_input.addEventListener("input", () => {
     let value = cardnumber_input.value.trim();
